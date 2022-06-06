@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, View, Image, Text, Alert, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
-import foto from './android/app/src/assets/perfil.jpg';
-import Card from './android/app/src/components/Card';
+import foto from '';
+import Card from '';
 
 const App = () => {
 
@@ -11,13 +11,13 @@ const App = () => {
     
     switch(rede_social) {
       case 'linkedin':
-        Alert.alert('Meu LinkedIn', 'https://linkedin.com/in/lucasrmagalhaes')
+        Alert.alert('Meu LinkedIn', 'https://www.linkedin.com/in/nattan-gama-05369a192/')
       break
       case 'facebook':
-        Alert.alert('Meu Facebook', 'https://facebook.com/darosamagalhaes')
+        Alert.alert('Meu Facebook', 'https://www.facebook.com/nattan.gama/')
       break
       case 'github':
-        Alert.alert('Meu GitHub', 'https://github.com/lucasrmagalhaes')
+        Alert.alert('Meu GitHub', 'https://github.com/nattangama')
       break
     }
   }
@@ -28,7 +28,7 @@ const App = () => {
 
         <View style={style.container_cabecalho}>
           <Image source={foto} style={style.foto} />
-          <Text style={style.nome}>LUCAS MAGALHÃES</Text>
+          <Text style={style.nome}>NATTAN GAMA</Text>
           <Text style={style.funcao}>Desenvolvedor JR.</Text>
           <View style={style.redes_sociais} >
             <TouchableOpacity onPress={() => handleRedeSocial('github')}>
@@ -45,15 +45,13 @@ const App = () => {
         </View>
 
         <Card titulo="Formação Acadêmica">
-          <Text style={style.card_content_text}>Sistemas para Internet</Text>
-          <Text style={style.card_content_text}>Técnico em Informática</Text>
+          <Text style={style.card_content_text}>Analise e Desenvolvimento De Sistemas</Text>
+          <Text style={style.card_content_text}>Técnico em Computação Gráfica</Text>
         </Card>
 
         <Card titulo="Experiência Profissional"> 
-          <Text style={style.card_content_text}>Desenvolvedor JR.</Text>
-          <Text style={style.card_content_text}>Auxiliar Técnico</Text>
-          <Text style={style.card_content_text}>Técnico de Manutenção JR.</Text>
-          <Text style={style.card_content_text}>Manutenção e Suporte em Informática</Text>
+          <Text style={style.card_content_text}>Estagiário da tecnologias de informação e comunicação</Text>
+         
         </Card>
 
       </View>
